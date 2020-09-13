@@ -42,7 +42,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy!
-    redirect_to post, alert: "削除しました"
+    redirect_to @post, alert: "削除しました"
   end
 
   private
